@@ -1,0 +1,11 @@
+.accommodation-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .accommodation-list a {
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,27 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Assurez-vous que rien ne dépasse des bordures */
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: brightness(0.3); /* Assombrit l'image pour améliorer la lisibilité du texte */
+  }
+  
+  .banner p {
+    position: absolute;
+    color: white; /* Le texte est blanc */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1; /* Assurez-vous que le texte est au-dessus de l'image */
+  }
+  

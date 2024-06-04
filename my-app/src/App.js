@@ -1,19 +1,22 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import AccommodationDetail from './pages/AccommodationDetail';
-import NotFound from './pages/NotFound';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import AccommodationDetail from './pages/AccommodationDetail/AccommodationDetail';
+import NotFound from './pages/NotFound/NotFound';
 import './App.css';
 
 const App = () => {
   return (
-    <div className="app">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/accommodation/:id" element={<AccommodationDetail />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/accommodation/:id" element={<AccommodationDetail />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+     
+        </div>
+    </Router>
   );
 };
 
