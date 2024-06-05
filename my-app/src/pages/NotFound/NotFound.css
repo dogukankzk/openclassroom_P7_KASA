@@ -1,0 +1,37 @@
+.message_erreur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.message_erreur h1 {
+    color: #FF6060;
+    font-size: 300px;
+    margin-bottom: 0;
+}
+
+.message_erreur_p {
+    font-size: 30px;
+    color: #FF6060;
+}
+
+.message_erreur_a {
+    color: black;
+    font-size: 20px;
+    margin-top: 110px;
+    margin-bottom: 110px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.message_erreur_a:hover {
+    background-color: #FF6060;
+    color: white;
+}
+
+

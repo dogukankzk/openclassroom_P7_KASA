@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import './AccommodationDetail.css';
 import data from '../../data.json';
+import './AccommodationDetail.css';
 
 const AccommodationDetail = () => {
   const { id } = useParams();

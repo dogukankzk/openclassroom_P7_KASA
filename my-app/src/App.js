@@ -3,19 +3,22 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import AccommodationDetail from './pages/AccommodationDetail/AccommodationDetail';
 import NotFound from './pages/NotFound/NotFound';
+import Header from './components/Header/Header';
+import Footer from './components/footer/footer';
 import './App.css';
 
 const App = () => {
   return (
     <Router>
+      <Header />
       <div className="app">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/accommodation/:id" element={<AccommodationDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-     
-        </div>
+      </div>
+      <Footer />
     </Router>
   );
 };
