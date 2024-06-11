@@ -10,7 +10,7 @@ body {
 
 .accommodation-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 2rem;
@@ -23,7 +23,6 @@ body {
 .accommodation-list a {
   text-decoration: none;
   color: black;
-  flex: 1 1 calc(33.333% - 1rem);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

@@ -1,12 +1,12 @@
 import React from 'react';
-import './banner.css';
+import './Banner.css';
 
 
-const Banner = () => {
+const Banner = ({image,title}) => {
   return (
     <div className='banner'>
-        <p>Chez vous, partout et ailleurs</p>
-        <img src="image_p7_kasa.png" alt="image" />
+        <p>{title}</p>
+        <img src={image} alt="banniere" />
     </div>
   );
 };

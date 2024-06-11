@@ -1,15 +1,12 @@
 .accommodation-detail {
-  padding: 20px;
-}
-
-.accommodation-detail img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  font-family: 'Montserrat';
 }
 
 .accommodation-detail h1 {
-  margin-top: 20px;
+  margin: 20px 0px 0px 0px;
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 1.7rem;
 }
 
 .accommodation-detail ul {
@@ -24,10 +21,10 @@
   border-radius: 5px;
 }
 
-.tag {
-  display: inline-block;
-  background: #eee;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
+
+.accommodation-title p{
+  text-align: left;
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 500;
 }

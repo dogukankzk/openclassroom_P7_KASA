@@ -6,7 +6,8 @@
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre ajoutée */
   transition: transform 0.2s, box-shadow 0.2s;
-  height: 275px;
+  height: 310px;
+  width: 310px;
 
 }
 .accommodation-card:hover {

@@ -1,0 +1,40 @@
+.gallery {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .image {
+    width: 100%;
+    border-radius: 10px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .fa-chevron-left,
+  .fa-chevron-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    font-size: 2rem;
+  }
+  
+  .fa-chevron-left {
+    left: 10px;
+  }
+  
+  .fa-chevron-right {
+    right: 10px;
+  }
+  

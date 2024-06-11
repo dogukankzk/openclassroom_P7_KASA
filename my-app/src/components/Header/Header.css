@@ -4,18 +4,17 @@
   justify-content: space-between;
   padding: 1rem;
   color: #000000;
-  width: 100%;
 }
 
 .logo img {
-  height: 60px;
-  width: 140px;
+  height: 150px;
+  width: 150px;
 }
 
 .navbar ul {
   list-style-type: none;
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .navbar ul li a {
