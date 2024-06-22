@@ -1,27 +1,32 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Collapse.css';
 
-const Collapse = ({ title, text }) => {
+const Collapse = ({ title, text, isList = false }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const contentRef = useRef(null);
 
-  useEffect(() => {
-    if (isOpen) {
-      contentRef.current.style.maxHeight = contentRef.current.scrollHeight + 'px';
-    } else {
-      contentRef.current.style.maxHeight = '0px';
-    }
-  }, [isOpen]);
+  const toggleCollapse = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className="collapse">
-      <div className="collapse-header" onClick={() => setIsOpen(!isOpen)}>
-        <h2>{title}</h2>
-        <i className={`fa-solid fa-chevron-${isOpen ? 'up' : 'down'}`}></i>
+      <div className="collapse-header" onClick={toggleCollapse}>
+        <h3>{title}</h3>
+        <i className={`fa ${isOpen ? 'fa-chevron-down' : 'fa-chevron-up'}`}></i>
       </div>
-      <div ref={contentRef} className="collapse-content">
-        <p>{text}</p>
-      </div>
+      {isOpen && (
+        <div className={`collapse-content ${isOpen ? 'show' : ''}`}>
+          {isList ? (
+            <ul>
+              {text.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{text}</p>
+          )}
+        </div>
+      )}
     </div>
   );
 };

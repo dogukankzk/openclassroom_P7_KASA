@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AccommodationCard from '../../components/AccommodationCard/AccommodationCard';
 import Banner from '../../components/Banner/Banner';
-import data from '../../data.json';
-import BannerImage from "../../assets/image/accueil.png"
+import data from '../../data/data.json';
+import BannerImage from "../../assets/image/accueil.png";
+import '../../assets/css/general.css';
 import './Home.css';
 
 const Home = () => {

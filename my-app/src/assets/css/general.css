@@ -1,20 +1,22 @@
-body {
+* {
   font-family: 'Montserrat', sans-serif;
+}
+body {
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.header {
-  font-family: 'Montserrat', sans-serif;
-}
+
+
 
 .accommodation-card h2 {
-  font-family: 'Montserrat', sans-serif;
+  
   font-weight: 500;
 }
 
 .accommodation-card p {
-  font-family: 'Montserrat', sans-serif;
+  
   font-weight: 400;
 }

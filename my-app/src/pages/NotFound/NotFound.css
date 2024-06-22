@@ -3,24 +3,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     text-align: center;
 }
 
 .message_erreur h1 {
+   
     color: #FF6060;
-    font-size: 300px;
+    font-size: 18vw;
     margin-bottom: 0;
 }
 
 .message_erreur_p {
-    font-size: 30px;
+    font-size: 3vw;
     color: #FF6060;
 }
 
 .message_erreur_a {
     color: black;
-    font-size: 20px;
+    font-size: 2vw;
     margin-top: 110px;
     margin-bottom: 110px;
     text-decoration: none;
@@ -34,4 +34,15 @@
     color: white;
 }
 
+  
+  
+  @media (max-width: 480px) {
 
+   .message_erreur_p{
+    margin:75px 6rem 0rem;
+
+   }
+   
+  
+  }
+  

@@ -6,7 +6,7 @@ import NotFound from './pages/NotFound/NotFound';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import About from './pages/Apropos/Apropos';
-import './assets/css/App.css';
+
 
 const App = () => {
   return (

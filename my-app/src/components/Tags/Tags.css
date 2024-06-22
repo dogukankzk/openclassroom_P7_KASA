@@ -14,3 +14,11 @@
 
   }
   
+
+  @media (max-width: 480px) {
+    .tag{
+        font-size: 0.5rem;
+        padding: 4px 6px;
+        border-radius: 3px;
+    }
+  }

@@ -14,7 +14,9 @@ const Gallery = ({ images }) => {
 
   return (
     <div className="gallery">
-      <i className="fa-solid fa-chevron-left" onClick={prevSlide}></i>
+      {images.length > 1 && (
+        <i className="fa-solid fa-chevron-left" onClick={prevSlide}></i>
+      )}
       {images.map((image, index) => (
         <div
           key={index}
@@ -23,7 +25,12 @@ const Gallery = ({ images }) => {
           {index === current && <img src={image} alt="gallery" className="image" />}
         </div>
       ))}
-      <i className="fa-solid fa-chevron-right" onClick={nextSlide}></i>
+      {images.length > 1 && (
+        <i className="fa-solid fa-chevron-right" onClick={nextSlide}></i>
+      )}
+      <div className="slide-counter">
+        {current + 1}/{images.length}
+      </div>
     </div>
   );
 };

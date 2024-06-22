@@ -1,9 +1,11 @@
 import React from 'react';
 import Collapse from '../../components/Collapse/Collapse';
+import '../../assets/css/general.css';
 import './Apropos.css';
 import Banner from '../../components/Banner/Banner';
 import BannerImage from '../../assets/image/about.png'
-import aboutData from '../../about.json'; 
+import aboutData from '../../data/about.json'; 
+
 
 const Apropos = () => {
   return (

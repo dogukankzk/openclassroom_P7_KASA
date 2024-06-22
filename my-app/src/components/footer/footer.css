@@ -1,5 +1,5 @@
 .footer {
-    background-color: black; 
+    background-color: black;
     color: white;
     padding-bottom: 1rem;
     text-align: center;
@@ -23,3 +23,16 @@
     height: 100px;
     width: 100px;
   }
+  
+  /* Media Queries */
+  @media (max-width: 480px) {
+    .footer p {
+      font-size: 0.9rem;
+    }
+  
+    footer img {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  

@@ -1,28 +1,59 @@
 .collapse {
-    border: 1px solid #ddd;
     border-radius: 5px;
-    margin-bottom: 10px;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
   }
   
   .collapse-header {
-    background-color: #ff6060;
-    color: white;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ff6060;
+    color: white;
     cursor: pointer;
+    padding: 10px 15px;
   }
   
   .collapse-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+    padding: 15px 10px;
+    background-color: #d3d3d32e;
+    display: none;
   }
   
-  .collapse-content p {
-    padding: 10px;
+  .collapse-content p,
+  .collapse-content ul {
     margin: 0;
+  }
+  
+  .collapse-content ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .collapse-content li {
+    padding: 5px 0;
+  }
+  
+  .collapse-header h3 {
+    margin: 0;
+  }
+  
+  .collapse-header i {
+    font-size: 1.2rem;
+  }
+  
+  .collapse-content.show {
+    display: block;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 480px) {
+    .collapse-header {
+      padding: 10px;
+    }
+  
+    .collapse-content {
+      padding: 10px;
+    }
   }
   

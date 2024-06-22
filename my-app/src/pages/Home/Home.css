@@ -1,4 +1,4 @@
-body {
+.app, .header {
   margin: 0px 80px 0px 80px;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -24,19 +24,99 @@ body {
   text-decoration: none;
   color: black;
   box-sizing: border-box;
+  display: block;
+  width: calc(33.333% - 1rem); /* Ensure each card takes up one third of the container */
+}
+
+.accommodation-list:after {
+  content: '';
+  flex: auto;
+}
+
+.accommodation-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 340px;
+  width: 100%;
 }
 
-@media (max-width: 1024px) {
-  .accommodation-list a {
-    flex: 1 1 calc(50% - 1rem);
-  }
+.accommodation-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
-  .accommodation-list a {
-    flex: 1 1 calc(100% - 1rem);
+.accommodation-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.accommodation-card h2 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.accommodation-card p {
+  color: #555;
+  margin: 0 1rem 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.accommodation-card h2, p {
+  text-align: center;
+}
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 1240px) {
+  
+  
+}
+
+
+@media (max-width: 480px) {
+  .app{
+    font-size: smaller;
+    margin: 0;
+
   }
+  .accommodation-list {
+    box-shadow: none;
+    margin-top: 20px ;
+    padding: 0;
+  }
+
+  .accommodation-card {
+    width: calc(100%);
+    height: 280px;
+    
+  }
+  
+  
+  .accommodation-card img {
+    height: 215px;
+  }
+
+  .accommodation-card h2{
+    font-size: 0.9rem;
+  }
+  
+  
+  .accommodation-list a{
+    width: 100%;
+  }
+
+  .home{
+    width: 90%;
+  }
+
+  .header, .home{
+    margin: 0px 20px 0px 20px;
+  } 
+
 }

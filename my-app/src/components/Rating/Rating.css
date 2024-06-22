@@ -1,6 +1,8 @@
 .rating {
     display: flex;
-    gap: 5px;
+    gap: 8px;
+    font-size: 22px;
+
   }
   
   .fa-star {

@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
   color: #000000;
+  padding: 0 20px;
 }
 
 .logo img {
@@ -29,4 +29,22 @@
 
 .navbar ul li a:hover {
   text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  .header{
+    padding: 0;
+  }
+  .logo img {
+    height: 60px;
+    width: 100px;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+    font-variant: all-small-caps;
+    align-items: center;
+    font-size: 15px;
+  }
 }

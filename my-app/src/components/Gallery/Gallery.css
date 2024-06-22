@@ -2,14 +2,17 @@
     position: relative;
     width: 100%;
     margin: auto;
+    overflow: hidden;
   }
   
   .slide {
     display: none;
+    transition: opacity 0.5s ease-in-out;
   }
   
   .slide.active {
     display: block;
+    opacity: 1;
   }
   
   .image {
@@ -28,6 +31,7 @@
     cursor: pointer;
     user-select: none;
     font-size: 2rem;
+    z-index: 1;
   }
   
   .fa-chevron-left {
@@ -36,5 +40,28 @@
   
   .fa-chevron-right {
     right: 10px;
+  }
+  
+  .slide-counter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 480px) {
+    .fa-chevron-left,
+    .fa-chevron-right {
+      font-size: 1.5rem;
+    }
+  
+    .image {
+      height: 220px;
+    }
   }
   
