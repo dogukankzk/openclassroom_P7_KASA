@@ -11,4 +11,6 @@ const Banner = ({image,title}) => {
   );
 };
 
+
+
 export default Banner;
