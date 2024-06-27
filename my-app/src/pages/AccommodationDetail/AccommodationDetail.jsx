@@ -6,7 +6,7 @@ import Gallery from '../../components/Gallery/Gallery';
 import Tags from '../../components/Tags/Tags';
 import Profile from '../../components/Profile/Profile';
 import Rating from '../../components/Rating/Rating';
-import NotFound from '../NotFound/NotFound'; // Importez le composant NotFound
+import NotFound from '../NotFound/NotFound'; 
 import '../../assets/css/general.css';
 import './AccommodationDetail.css';
 
